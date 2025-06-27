@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACTAR - Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <!-- Barra de navegación superior -->
+    <nav class="top-nav">
+        <div class="nav-logo" id="nav-logo">PACTAR</div>
+        <div class="nav-links">
+            <div class="nav-link" data-target="main-interface">Inicio</div>
+            <div class="nav-link" data-target="about-interface">Sobre Mí</div>
+            <div class="nav-link" data-target="projects-interface">Proyectos</div>
+            <div class="nav-link active" data-target="pactar-interface">Contacto</div>
+        </div>
+    </nav>
+
+    <!-- Menú móvil -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-link" data-target="main-interface">Inicio</div>
+        <div class="mobile-nav-link" data-target="about-interface">Sobre Mí</div>
+        <div class="mobile-nav-link" data-target="projects-interface">Proyectos</div>
+        <div class="mobile-nav-link" data-target="pactar-interface">Contacto</div>
+    </div>
+
+    <main id="contactPanel">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>CONTÁCTAME</h1>
+                <div class="contact-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-section">
+                        <h2>EMAIL</h2>
+                        <p>pactarjf@gmail.com</p>
+                    </div>
+
+                    <div class="contact-section">
+                        <h2>TELÉFONO</h2>
+                        <p>+57 3007848915</p>
+                    </div>
+
+                    <div class="contact-section">
+                        <h2>REDES SOCIALES</h2>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/pactarjf/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>@pactarjf</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pactarjf/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/pactarjf" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>ENVÍAME UN MENSAJE</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">NOMBRE</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">ASUNTO</label>
+                            <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">MENSAJE</label>
+                            <textarea id="message" name="message" placeholder="Tu mensaje..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
